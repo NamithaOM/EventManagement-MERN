@@ -3,8 +3,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
-
-const baseUrl = import.meta.env.VITE_BASE_URL;
+import baseUrl from "../baseUrl";
+// const baseUrl = import.meta.env.VITE_BASE_URL;
 
 export default function CreateEvent() {
   const navigate = useNavigate();

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const baseUrl = import.meta.env.VITE_BASE_URL;
+import baseUrl from "../baseUrl";
+
 
 export default function EventList() {
   const [events, setEvents] = useState([]);

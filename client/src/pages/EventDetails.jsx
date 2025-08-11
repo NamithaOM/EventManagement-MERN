@@ -3,8 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
-
-const baseUrl = import.meta.env.VITE_BASE_URL;
+import baseUrl from "../baseUrl";
 
 export default function EventDetails() {
   const { id } = useParams();
